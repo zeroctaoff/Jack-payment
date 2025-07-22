@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment DANA - QRIS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(to bottom right, #0f172a, #1e293b);
+        font-family: 'Segoe UI', sans-serif;
+      }
+      img {
+        transition: transform 0.3s ease;
+      }
+      img:hover {
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full text-center">
+      <h1 class="text-2xl font-bold text-gray-800 mb-2">Pembayaran DANA</h1>
+      <p class="text-sm text-gray-500 mb-4">Silakan scan QRIS di bawah ini</p>
+      <img
+        src="https://img1.pixhost.to/images/7307/623223860_skyzopedia.jpg"
+        alt="QRIS Pembayaran"
+        class="w-full rounded-lg shadow-md mb-4"
+      />
+      <div class="text-left">
+        <p class="text-gray-700"><strong>Nomor DANA:</strong></p>
+        <p class="text-blue-700 text-lg font-mono mb-4">0822 2968 5794</p>
+      </div>
+      <button
+        onclick="window.open('https://link.dana.id/minta', '_blank')"
+        class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full transition duration-300"
+      >
+        Bayar Sekarang
+      </button>
+    </div>
+  </body>
+</html>
